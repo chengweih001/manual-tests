@@ -93,3 +93,7 @@ function assertTrue(observed, opt_message) {
 function assertFalse(observed, opt_message) {
   assertEquals(false, observed, opt_message);
 }
+
+async function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
